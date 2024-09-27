@@ -66,4 +66,86 @@ function verificaPoluicao() {
     
 }
 
-// ------- Exercicio
+// ------- Exercicio 4 ---Aposentadoria-- -->
+
+
+
+
+
+// ------- Exercicio 5 ---Bhaskara-- -->
+function calculaBhaskara() {
+    let a = Number(document.getElementById("valorA").value)
+    let b = Number(document.getElementById("valorB").value)
+    let c = Number(document.getElementById("valorC").value)
+
+    let delta = (b ** 2) - (4 * a * c)
+
+    if (delta < 0) {
+        document.getElementById("resultadoBhaskara").innerText = "Delta menor que 0. Não existem raízes reais."
+    }
+    else if (delta === 0) {
+
+        let x = -b / (2 * a)
+        document.getElementById("resultadoBhaskara").innerText = "Delta igual a 0. Raíz única: X = " + x
+    }
+    else {
+
+        let x1 = (-b + Math.sqrt(delta)) / (2 * a)
+        let x2 = (-b - Math.sqrt(delta)) / (2 * a)
+        document.getElementById("resultadoBhaskara").innerText = "Delta maior que 0. Raízes: X1= " + x1 + ", X2 = " + x2
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ------- Exemplo de SWITCASE3
+
+function verificaMes() {
+    let numMes = Number(document.getElementById("numMes").value)
+    let nomeMes
+    switch(numMes){
+        case 1:
+            nomeMes = "Janeiro"
+            break
+        case 2:
+            nomeMes = "Fevereiro"
+            break
+        case 3:
+            nomeMes = "Março"
+            break
+        default:
+            nomeMes = "Número inválido"
+            break
+    }
+    document.getElementById("nomeMes").innerText = nomeMes
+}

@@ -18,7 +18,7 @@
         <button type="submit" onclick="verificarNumPrimo()">Verificar</button>
         <div id="respostaPrimo"></div>
     </section>
-    <br><hr>
+    <br>
 
 <!-- ---------Exercicio 2 ---Categorias do Atletas-- -->
     <section id="">
@@ -30,7 +30,7 @@
         <button type="submit" onclick="verificaIdade()">Verificar</button>
         <div id="respostaIdade"></div>        
     </section>
-    <br><hr>
+    <br>
 
 <!-- ---------Exercicio 3 ---índice de poluição-- -->
 
@@ -48,30 +48,37 @@
         <div id="respostaPoluicao"></div>
         
     </section>
-    <br><hr>
-<!-- ---------Exercicio 4 ---Números Primos-- -->
+    <br>
+<!-- ---------Exercicio 4 ---Aposentadoria-- -->
 
     <section id="">
-        <h2>Índice de poluição</h2>
+        <h2>Aposentadoria</h2>
         <ul>
             <li><p>Ter no mínimo 65 anos de idade.</p></li>
-            <li><p>Se o índice sobe para além de 30% as indústrias do 1º grupo são intimadas a suspenderem suas atividades.</p></li>
-            <li><p>Se o índice ultrapassar os 40% as industrias do 1º e 2º grupo serão intimadas.</p></li>
-            <li><p>Se o índice ficar acima de 50% todos os grupos devem ser notificados e paralisarem suas atividades.</p></li>
+            <li><p>Ter trabalhado no mínimo 30 anos.</p></li>
+            <li><p>Ter no mínimo 60 anos e ter trabalhado no mínimo 25 anos.</p></li>
+            <li><p></p></li>
         </ul>
-        
-        <input type="number" id="poluicao" placeholder="Informe o Índice de poluição:">
-        <button type="submit" onclick="verificaPoluicao()">Verificar</button>
-        <div id="respostaPoluicao"></div>
-        
+        <input type="number" id="ano" placeholder="Digite seu ano de nascimento: ">
+        <input type="number" id="tempo" placeholder="Informe seu tempo de trabalho: ">
+        <input type="number" id="codigo" placeholder="Informe seu código da empresa: ">
+        <button type="submit" onclick="verificaAposentadoria()">Verificar</button>
+        <div id="resultadoAposentadoria"></div>
+        <div id="resultadoIdade"></div>
     </section>
-    <br><hr>
-<!-- ---------Exercicio 5 ---Números Primos-- -->
+    <br>
+<!-- ---------Exercicio 5 ---Bhaskara-- -->
 
     <section id="">
-            
+        <h2>Bhaskara</h2>
+        
+        <input type="number" id="valorA" placeholder="Informe o Valor A: ">
+        <input type="number" id="valorB" placeholder="Informe o Valor B: ">
+        <input type="number" id="valorC" placeholder="Informe o Valor C: ">
+        <button type="submit" onclick="calculaBhaskara()">Verificar</button>
+        <div id="resultadoBhaskara"></div>        
     </section>
-    <br><hr>
+    <br>
 
 </body>
 </html>
